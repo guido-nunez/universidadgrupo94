@@ -5,6 +5,9 @@
  */
 package universidadgrupo94;
 
+import java.sql.Connection;
+import universidadgrupo94.accesoADatos.Conexion;
+
 /**
  *
  * @author guido
@@ -16,6 +19,8 @@ public class Universidadgrupo94 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Connection con = Conexion.getConexion();
     }
     
 }
