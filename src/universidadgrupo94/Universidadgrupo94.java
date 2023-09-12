@@ -6,7 +6,10 @@
 package universidadgrupo94;
 
 import java.sql.Connection;
+import java.time.LocalDate;
+import universidadgrupo94.accesoADatos.AlumnoData;
 import universidadgrupo94.accesoADatos.Conexion;
+import universidadgrupo94.entidades.Alumno;
 
 /**
  *
@@ -21,6 +24,15 @@ public class Universidadgrupo94 {
         // TODO code application logic here
         
         Connection con = Conexion.getConexion();
+        Alumno Juan = new Alumno (9,25324439, "luis", "David", LocalDate.of(1990, 3, 20), true);
+        AlumnoData alu=new AlumnoData();
+        //alu.guardarAlumno(Juan);
+        //alu.modificarAlumno(Juan);
+        alu.eliminarAlumno(8);
+        
     }
+    
+    
+    
     
 }
